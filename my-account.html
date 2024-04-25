@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>reFashion | Account</title>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.html">
+                    <strong><span>re</span>Fashion</strong>
+                </a>
+
+                <div class="d-lg-none">
+                    <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                    <a href="cart.html" class="bi-bag custom-icon"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="my-account.html">My Account</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="discounts.html">Discounts</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="fashion-recommendations.html">Fashion Recommendations</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-lg-block">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+                        <a href="cart.html" class="bi-bag custom-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <h1>My Account</h1><br>
+                <div class="account-details">
+                    <h2>Account Details</h2>
+                    <p>Name: John Doe</p>
+                    <p>Email: johndoe@example.com</p>
+                </div>
+                <div class="past-orders">
+                    <h2>Past Orders</h2>
+                    <ul>
+                        <li>Order #12345 - Date: January 1, 2024</li>
+                        <li>Order #67890 - Date: February 15, 2024</li>
+                        <!-- You can list more past orders here -->
+                    </ul>
+                </div>
+                <div class="returns">
+                    <h2>Returns</h2>
+                    <p>Returns are accepted within 30 days of purchase.</p>
+                    <p>Please contact customer support for return instructions.</p>
+                </div>
+                <!-- You can add more sections as needed -->
+            </div>
+        </section>
+
+        <section class="contact section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mb-4">Contact <span>support</span></h2>
+
+                        <form class="contact-form me-lg-5 pe-lg-3" role="form">
+                            <div class="form-floating">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Full name"
+                                    required>
+
+                                <label for="name">Full name</label>
+                            </div>
+
+                            <div class="form-floating my-4">
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                    class="form-control" placeholder="Email address" required>
+
+                                <label for="email">Email address</label>
+                            </div>
+
+                            <div class="form-floating my-4">
+                                <input type="subject" name="subject" id="subject" class="form-control"
+                                    placeholder="Subject" required>
+
+                                <label for="subject">Subject</label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <textarea id="message" name="message" class="form-control"
+                                    placeholder="Leave a comment here" required style="height: 160px"></textarea>
+
+                                <label for="message">Tell us about the issue</label>
+                            </div>
+
+                            <div class="col-lg-5 col-6">
+                                <button type="submit" class="form-control">Send</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-5 ms-auto">
+                        <div class="row">
+                            <div class="col-6 border-end contact-info">
+                                <h6 class="mb-3">Mail Our Support</h6>
+
+                                <a href="mailto:hello@company.com" class="custom-link">
+                                    hello@company.com
+                                    <i class="bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-6 contact-info">
+                                <h6 class="mb-3">Mail Our Office</h6>
+
+                                <a href="mailto:studio@company.com" class="custom-link">
+                                    studio@company.com
+                                    <i class="bi-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-6 border-top border-end contact-info">
+                                <h6 class="mb-3">Our Office</h6>
+
+                                <p class="text-muted">Coimbatore, India</p>
+                            </div>
+
+                            <div class="col-6 border-top contact-info">
+                                <h6 class="mb-3">Our Socials</h6>
+
+                                <ul class="social-icon">
+
+                                    <li><a href="#" class="social-icon-link bi-messenger"></a></li>
+
+                                    <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                                    <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                    <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h5 class="text-white mb-3">Site Map | reFashion</h5>
+                <ul class="footer-menu d-flex justify-content-center">
+                    <li class="footer-menu-item"><a href="index.html" class="footer-menu-link">Home</a></li>
+                    <li class="footer-menu-item"><a href="my-account.html" class="footer-menu-link">My Account</a></li>
+                    <li class="footer-menu-item"><a href="faq.html" class="footer-menu-link">FAQs</a></li>
+                    <li class="footer-menu-item"><a href="discounts.html" class="footer-menu-link">Discounts</a></li>
+                    <li class="footer-menu-item"><a href="fashion-recommendations.html" class="footer-menu-link">Fashion Recommendations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-12 text-center">
+                <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2024 <strong>reFashion</strong></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
