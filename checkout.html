@@ -80,7 +80,13 @@ head>
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h2>Your addresses</h2>
+    <h2>Your addresses</h2>
+    <div id="existing-addresses">
+        <!-- Existing addresses will be dynamically generated here -->
+    </div>
+    <button type="button" class="btn btn-primary mt-3" id="choose-existing-address">Choose Existing Address</button>
+    <!-- Your address form goes here -->
+</div>
                             <section class="checkout-section section-padding">
                 <div class="container">
                     <div class="row">
@@ -89,7 +95,7 @@ head>
                                 <div class="form-group">
                                     <label for="location">Select Current Location:</label>
                                     <select class="form-control" id="location">
-                                        <option value="current">Current Location</option>
+                                        <option value="current"><a href="js/map.html">Current Location</a></option>
                                         <option value="other">Other Location</option>
                                     </select>
                                 </div>
@@ -185,6 +191,9 @@ head>
                 </table>
             </div>
         </div>
+        <div class="col-lg-12">
+    <button type="button" class="checkout-btn" id="confirm-order">Confirm Order</button>
+</div>
     </div>
 </section>
 
@@ -216,6 +225,7 @@ head>
 <script src="js/jQuery.headroom.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/map.js"></script>
 
 </body>
 </html>

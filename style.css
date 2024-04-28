@@ -1231,7 +1231,11 @@ button:focus:not(:focus-visible) {
 }
 
 .checkout-btn:hover {
-    background-color: #005a0b; /* Darker shade of primary color */
+    background-color: black;
+}
+
+.checkout-btn:active {
+    background-color: black;
 }
 
 /* CSS for Address Selection Form */
@@ -1280,4 +1284,49 @@ button.btn-primary {
 button.btn-primary:hover {
     background-color: black;
 }
+button.btn-primary:active {
+    background-color: black;
+}
 
+#address-form {
+    margin-top: 20px;
+    display: none; /* Initially hide the form */
+}
+
+#choose-existing-address {
+    display: none; /* Initially hide the button */
+}
+/* Map styling */
+.map-container {
+  width: 100%;
+  height: 500px; /* Adjust height as needed */
+  margin-top: 20px;
+}
+
+/* Additional styling for map markers, if needed */
+.marker {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 991px) {
+  .map-container {
+    height: 300px; /* Adjust height for smaller screens */
+    width: auto; /* Corrected typo here */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .map-container {
+    height: 100px; /* Adjust height for even smaller screens */
+    width: 100%; /* Adjust width for smaller screens */
+  }
+}
